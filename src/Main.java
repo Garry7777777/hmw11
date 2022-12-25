@@ -1,5 +1,7 @@
 
 import transport.Car;
+import transport.Bus;
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +18,18 @@ public class Main {
         System.out.println(carBMW);
         System.out.println(carKia);
         System.out.println(carHy);
+        System.out.println();
 
+        Car.Insurance insuranceLada = new Car.Insurance(LocalDate.of(2020, 2, 2), 12345, "54321");
+        System.out.println(insuranceLada);
+        System.out.println();
+
+        Bus busLiaz = new Bus("ЛИАЗ", "688", "СССР", 1980, "Желтый", 80);
+        Bus busIcarus = new Bus("Icarus", "280", "Венгрия", 1990, "Красный", 100);
+        Bus busPaz = new Bus("ПАЗ", "Горбатый", "Россия", 2000, "Зелёный", 60);
+
+        System.out.println(busLiaz);
+        System.out.println(busIcarus);
+        System.out.println(busPaz);
     }
 }
